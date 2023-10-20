@@ -3,11 +3,13 @@ static char	buf[BUFFER_SIZE + 1];
 inizializza già tutto a 0 se la variabile è statica.
 
 
-  Vantaggi:
+Vantaggi:   
+  
 Persistenza: Mantengono il loro stato tra le chiamate alla funzione.
 Inizializzazione a Zero: Sono automaticamente inizializzate a zero se non altrimenti specificato.
 Riduzione dello Stack: Poiché sono allocate nella memoria statica, non utilizzano lo stack della funzione.
-Svantaggi:
+Svantaggi:   
+  
 Condivisione di Stato: Possono introdurre effetti collaterali e rendere il codice più difficile da capire e testare.
 Thread Safety: Non sono sicure in un ambiente multithread a meno che non vengano gestite appropriatamente.
 Flessibilità: La dimensione è fissata a tempo di compilazione, quindi non possono essere ridimensionate dinamicamente come gli array dinamici.
